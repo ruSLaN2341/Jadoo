@@ -1,0 +1,65 @@
+.testimonials{
+  .container{
+    max-width:1165px;
+    margin: auto;
+    display: flex;
+    column-gap: 87px;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    @include text($familyPopp,normal,600,18px,27px,#5E6282);
+    margin-bottom: 8px;
+
+  }
+  &__subtitle{
+    @include text($familyVolk,normal,700,50px,64px,#14183E);
+    margin-bottom: 82px;
+    text-transform: capitalize;
+  }
+  &__comment{
+    width: 669px;
+    height: 356px;
+    display: flex;
+    column-gap: 150px;
+    svg{
+      margin-top: 18%;
+    }
+    &-text{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 68px;
+        height: 68px;
+      }
+    }
+    &-content,&-name,&-info{
+      margin-left: 68px;
+    }
+    &-content{
+      @include text($familyPopp,normal,500,16px,32px,#5E6282);
+      margin-bottom: 34px;
+    }
+    &-name{
+      @include text($familyPopp,normal,600,18px,27px,#5E6282);
+    }
+    &-info{
+      @include text($familyPopp,normal,500,14px,21px,#5E6282);
+      margin-bottom: 34px;
+    }
+  }
+  &__next{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    align-items: center;
+    &-name{
+      @include text($familyPopp,normal,600,18px,27px,#5E6282);
+    }
+    &-info{
+      @include text($familyPopp,normal,500,14px,21px,#5E6282);
+    }
+  }
+}

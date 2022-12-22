@@ -1,0 +1,27 @@
+.companyRow{
+  margin-bottom: 111px;
+  .container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img:nth-child(4){
+      mix-blend-mode: luminosity;
+    }
+    img:nth-child(5){
+      mix-blend-mode: luminosity;
+    }
+    img:nth-child(1){
+
+       mix-blend-mode: luminosity;
+     }
+    img:nth-child(2){
+      margin-right: 90px;
+      mix-blend-mode: luminosity;
+    }
+    img:nth-child(3){
+      margin-right: 90px;
+    }
+  }
+}

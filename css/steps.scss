@@ -1,0 +1,141 @@
+.steps{
+  margin-bottom: 197px;
+  .container{
+    position: relative;
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    column-gap: 118px;
+  }
+  &__textbox{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    @include text($familyPopp,normal,600,18px,27px,#5E6282);
+    margin-bottom:15px;
+  }
+  &__subtitle{
+    @include text($familyVolk,normal,700,50px,64px,#14183E);
+    margin-bottom:31px;
+    text-transform: capitalize;
+  }
+  &__plan{
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    &__text{
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+    }
+    &-title{
+      @include text($familyPopp,normal,700,16px,125%,#5E6282);
+    }
+    &-subtitle{
+      @include text($familyPopp,normal,400,16px,125%,#5E6282);
+
+    }
+  }
+  &__planCard{
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+  }
+  &__card{
+    display: flex;
+    flex-direction: column;
+    width: 371px;
+    height: 400px;
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 26px;
+    &-title{
+      margin-top: 26px;
+      margin-bottom: 13px;
+      @include text($familyPopp,normal,500,18px,125%,$color00);
+    }
+    &-subtitle{
+      margin-bottom: 21px;
+      @include text($familyPopp,normal,500,16px,125%,#84829A);
+      letter-spacing: -0.005em;
+    }
+    &-svgrow{
+      display: flex;
+      column-gap: 18px;
+    }
+    &__going{
+      display: flex;
+    }
+    &__howmany{
+      display: flex;
+      column-gap: 15px;
+      margin-right: auto;
+    }
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 30px;
+  }
+  &__process{
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    width: 263px;
+    height: 129px;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 18px;
+
+    &-block{
+      display: flex;
+      flex-direction: column;
+      row-gap: 9px;
+      padding: 16px 25px 22px 20px;
+      svg:nth-child(3){
+        margin-left: auto;
+      }
+    }
+    &__tripToRome{
+      display: flex;
+      column-gap: 11px;
+    }
+    &-text{
+      display: flex;
+      flex-direction: column;
+      row-gap: 6px;
+    }
+    &-img{
+
+      img{
+        border-radius: 50px;
+      }
+    }
+    &-title{
+      @include text($familyPopp,normal,500,14px,125%,#84829A);
+      letter-spacing: -0.035em;
+    }
+    &-subtitle{
+      @include text($familyPopp,normal,500,18px,125%,$color00);
+      letter-spacing: -0.015em;
+    }
+    &-completed{
+      display: flex;
+      margin: auto;
+    }
+    &-percent{
+      @include text($familyPopp,normal,500,14px,125%,#8A79DF);
+      letter-spacing: -0.055em;
+    }
+    &-subtitle{
+      @include text($familyPopp,normal,500,14px,125%,$color00);
+      letter-spacing: -0.055em;
+    }
+  }
+  &-pos{
+    position: absolute;
+    right: -60px;
+    top: -90px;
+    z-index: -1;
+  }
+}

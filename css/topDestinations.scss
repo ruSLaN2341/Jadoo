@@ -1,0 +1,72 @@
+.topDestinations{
+  margin-bottom: 189px;
+  .container{
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  &__pos{
+    position: absolute;
+    z-index: -1;
+    right: -30px;
+    bottom: 47px;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    text-align: center;
+  }
+  &__title{
+    @include text($familyPopp,normal,600,18px,47px,#5E6282);
+  }
+  &__subtitle{
+    @include text($familyVolk,normal,700,60px,54px,#14183E);
+  }
+  &__card{
+    width:315px;
+    height: 457px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    border-radius: 24px;
+    &-whitebox{
+      display: flex;
+      width: 100% ;
+      flex-direction: column;
+      row-gap: 20px;
+      background: white;
+    }
+    &__block{
+      display: flex;
+      justify-content: space-between;
+      padding:27px 23px 0;
+      @include text($familyPopp,normal,500,18px,125%,#5E6282);
+
+    }
+    &__block2{
+      display: flex;
+      column-gap: 15px;
+      padding: 0 23px 42px;
+      @include text($familyPopp,normal,500,16px,125%,#5E6282);
+    }
+  }
+  &__block{
+    display: flex;
+    justify-content: space-around;
+    .topDestinations__card:first-child{
+      background-image:url("../img/topDestinations/Rome.png");
+    }
+    .topDestinations__card:nth-child(2){
+      background-image:url("../img/topDestinations/London.png");
+    }
+    .topDestinations__card:last-child{
+      background-image:url("../img/topDestinations/Europe.png");
+    }
+  }
+
+}

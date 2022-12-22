@@ -1,0 +1,57 @@
+.category{
+  margin-bottom: 158px;
+  .container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 66px;
+    position: relative;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  &__title{
+    @include text($familyPopp,normal,600,18px,27px,#5E6282);
+  }
+  &__subtitle{
+    @include text($familyVolk,normal,700,50px,64px,#14183E);
+  }
+  &__row{
+    display: flex;
+    column-gap: 35px;
+  }
+  &__card{
+    width: 267px;
+    height: 314px;
+    background: white;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 36px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    &-svg{
+      margin-top: 40px;
+    }
+    &-title{
+      @include text($familyOpenSans,normal,600,20px,27px,#1E1D4C);
+      margin-bottom: 15px;
+      margin-top: auto;
+    }
+    &-subtitle{
+      @include text($familyOpenSans,normal,500,16px,26px,#5E6282);
+      text-align: center;
+      margin-bottom: 45px;
+    }
+  }
+  &__pos{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

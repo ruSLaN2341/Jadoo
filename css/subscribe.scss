@@ -1,0 +1,60 @@
+.subscribe{
+  margin-bottom: 166px;
+  .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 74px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  &__txt{
+    padding-top: 79px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  &__title{
+    @include text($familyPopp,normal,600,33px,54px,#5E6282);
+  }
+  &__form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 37%;
+      left: 260px;
+      width: 25px;
+      height: 25px;
+      margin: auto 0;
+      background: url("../img/subscribe/gmail.png") no-repeat;
+      z-index: 100;
+    }
+  }
+  &__input{
+    position: relative;
+    width: 421px;
+    height: 68px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    @include text($familyPopp,normal,400,14px,17px,#39425D);
+  }
+  &__submit{
+    @include text($familyOpenSans,normal,600,17px,23px,$color01);
+    width: 180px;
+    height: 68px;
+    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  &-pos{
+    position: absolute;
+    top: -13px;
+    right: -20px;
+  }
+}
